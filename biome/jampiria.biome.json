@@ -1,0 +1,46 @@
+{
+	"javascript": {
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
+		},
+		"formatter": {
+			"enabled": true,
+			"indentStyle": "space",
+			"indentWidth": 2,
+			"lineEnding": "lf",
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "single",
+			"trailingCommas": "all",
+			"bracketSpacing": true,
+			"bracketSameLine": true,
+			"arrowParentheses": "asNeeded"
+		}
+	},
+	"linter": {
+		"rules": {
+			"correctness": {
+				"useExhaustiveDependencies": "info"
+			},
+			"suspicious": {
+				"noExplicitAny": "info"
+			},
+			"style": {
+				"useImportType": "warn"
+			},
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			}
+		}
+	},
+	"files": {
+		"ignore": [
+			"dist",
+			"node_modules",
+			".next",
+			"*.json",
+			"*.css",
+			"src/gql/*",
+			"*.graphql"
+		]
+	}
+}
