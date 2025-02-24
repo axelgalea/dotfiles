@@ -43,6 +43,6 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": ["node_modules"]
 	}
 }
