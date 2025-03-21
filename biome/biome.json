@@ -22,7 +22,8 @@
 			"trailingCommas": "all",
 			"bracketSpacing": true,
 			"bracketSameLine": true,
-			"arrowParentheses": "asNeeded"
+			"arrowParentheses": "asNeeded",
+			"lineWidth": 105
 		}
 	},
 	"linter": {
@@ -43,6 +44,12 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["node_modules"]
+		"ignore": [
+			"node_modules",
+			"**/build",
+			"**/public",
+			"pnpm-lock.yaml",
+			"routeTree.gen.ts"
+		]
 	}
 }
