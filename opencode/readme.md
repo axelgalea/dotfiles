@@ -26,6 +26,9 @@ npx skills add https://github.com/anthropics/skills --skill docx
 ### Emails
 npx skills add https://github.com/resend/email-best-practices --skill email-best-practices
 
+### PRD
+npx skills add snarktank/ralph@prd
+
 ### ~/.bashrc
 Function that will eventually become a ralph loop 
 ralph() {
