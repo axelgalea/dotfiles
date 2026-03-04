@@ -25,3 +25,18 @@ npx skills add https://github.com/anthropics/skills --skill docx
 
 ### Emails
 npx skills add https://github.com/resend/email-best-practices --skill email-best-practices
+
+### ~/.bashrc
+Function that will eventually become a ralph loop 
+ralph() {
+  if [ -z "$1" ]; then
+    echo "Usage: oc <directory>"
+    return 1
+  fi
+ opencode run "@PRD.md @progress.txt \
+1. Read the PRD and progress file. \
+2. Find the next incomplete task and implement it. \
+3. Commit your changes. \
+4. Update progress.txt with what you did. \
+ONLY DO ONE TASK AT A TIME." --dir "$1" --agent build --model opencode/minimax-m2.5
+}
